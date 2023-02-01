@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+}
+body{
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.header,.graphContainer{
+    width:95%;
+}
+img{
+    height: 1cm;
+    width: 1cm;
+}
+p{
+    font-size: 11px;
+}
+
+.tooltip{
+    background-color: transparent;
+    color: transparent;
+}
+
+.barsContainer{
+    width:1cm;
+}
+
+.bar{
+    width:.8cm;
+    height: var(--height);
+    background-color:hsl(10, 79%, 65%)
+}
+
+.bar:hover{
+    background-color:hsl(10, 65%, 73%);
+    z-index:1;
+}
+
+.barsContainer:hover .tooltip{
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(30, 58%, 91%);
+}
+
+  @media only screen and (min-width: 480px) {
+    .header,.graphContainer{
+        width:12cm;
+    }
+    .bar{
+        width:1cm;
+    }
+  }
